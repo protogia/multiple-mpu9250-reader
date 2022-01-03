@@ -35,10 +35,10 @@ if not 'accel' in mode:
 	imu_2_slave.setGyroRange("GyroRangeSelect250DPS")
 
 # lowpassfreq: 5Hz, 10Hz, 20Hz, 41Hz, 92Hz, 184Hz
-imu_1_master.setLowPassFilterFrequency("AccelLowPassFilter184")
-imu_1_slave.setLowPassFilterFrequency("AccelLowPassFilter184")
-imu_2_master.setLowPassFilterFrequency("AccelLowPassFilter184")
-imu_2_slave.setLowPassFilterFrequency("AccelLowPassFilter184")
+#imu_1_master.setLowPassFilterFrequency("AccelLowPassFilter184")
+#imu_1_slave.setLowPassFilterFrequency("AccelLowPassFilter184")
+#imu_2_master.setLowPassFilterFrequency("AccelLowPassFilter184")
+#imu_2_slave.setLowPassFilterFrequency("AccelLowPassFilter184")
 
 imu_1_master.begin()
 imu_1_slave.begin()
