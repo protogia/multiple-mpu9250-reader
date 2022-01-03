@@ -1,0 +1,16 @@
+[Unit]
+Description=MPU-9250-reader
+After=network-online.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/software/mpu9250/
+ExecStartPre=/bin/sleep 45
+ExecStart=/home/pi/software/mpu9250/bin/python3 /home/pi/software/mpu9250/src/mpu_reader.py
+Restart=on-failure
+
+
+[Install]
+WantedBy=multi-user.target
+Alias=mpu.service
